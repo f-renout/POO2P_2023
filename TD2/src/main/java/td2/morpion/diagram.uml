@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="22.130861443853576" y="469.7511528319545">td2.morpion.Joueur</node>
+    <node x="-60.799295293792454" y="-13.58405846149003">td2.morpion.Grille</node>
+    <node x="265.3052825560019" y="274.1814446044293">td2.morpion.Coup</node>
+    <node x="1140.89561336748" y="750.7623001006973">td2.morpion.Type</node>
+    <node x="27.614374831354297" y="641.7622960299396">td2.morpion.IA</node>
+    <node x="473.4064867924581" y="399.27503783928677">td2.morpion.Morpion</node>
+    <node x="275.9897202752339" y="815.7668358620642">td2.morpion.IAevoluee</node>
+    <node x="270.94591951041417" y="481.84184634280905">td2.morpion.Jeton</node>
+    <node x="285.3150017589271" y="607.7795087457439">td2.morpion.Humain</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="td2.morpion.IAevoluee" target="td2.morpion.IA" relationship="GENERALIZATION">
+      <point x="-118.5" y="0.0" />
+      <point x="119.1143748313543" y="859.2668358620642" />
+      <point x="0.0" y="67.5" />
+    </edge>
+    <edge source="td2.morpion.Humain" target="td2.morpion.Joueur" relationship="GENERALIZATION">
+      <point x="-91.50000175892714" y="4.912542561328337E-4" />
+      <point x="228.114" y="651.28" />
+      <point x="228.114" y="612.0" />
+      <point x="113.631" y="612.0" />
+      <point x="1.3855614642466207E-4" y="55.99984716804545" />
+    </edge>
+    <edge source="td2.morpion.IA" target="td2.morpion.Joueur" relationship="GENERALIZATION">
+      <point x="-3.748313542928372E-4" y="-67.50029602993965" />
+      <point x="119.114" y="612.0" />
+      <point x="113.631" y="612.0" />
+      <point x="1.3855614642466207E-4" y="55.99984716804545" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5261472785485592" showDependencies="false" x="639.0" y="454.5" />
+  <SelectedNodes>
+    <node>td2.morpion.Grille</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

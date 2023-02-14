@@ -34,13 +34,16 @@ public class IAevoluee extends IA {
         final var collect = flux.filter(Objects::nonNull).collect(groupingBy(Jeton::type, counting()));
         final var nbJetonsCurrentPlayer = collect.getOrDefault(type, 0L);
         final var nbJetonsAdversaire = collect.getOrDefault(type.adversaire(), 0L);
+        if (nbJetonsAdversaire + nbJetonsCurrentPlayer == 3) {
+            return 0;
+        }
         if (nbJetonsAdversaire == 2) {
             return -30;
         } else if (nbJetonsCurrentPlayer == 2) {
             return 30;
-        } else if (nbJetonsAdversaire == 1) {
+        } else if (nbJetonsAdversaire == 1 && nbJetonsCurrentPlayer == 0) {
             return -10;
-        } else if (nbJetonsCurrentPlayer == 1) {
+        } else if (nbJetonsCurrentPlayer == 1 & nbJetonsAdversaire == 0) {
             return 10;
         }
         return 0;

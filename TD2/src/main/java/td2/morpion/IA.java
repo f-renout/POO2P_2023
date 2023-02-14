@@ -41,6 +41,7 @@ public class IA extends Joueur {
         for (Coup coup : coups) {
             grille.remplir(coup);
             int score = min(profondeur - 1);
+            //System.out.printf("on teste le coup %s=> score%d%n",coup,score);
             if (score > scoreMax) {
                 scoreMax = score;
                 prochain = coup;
@@ -48,6 +49,7 @@ public class IA extends Joueur {
             grille.annuler(coup);
         }
         prochainCoup = prochain;
+        //System.out.printf("profondeur:%d on va jouer le coup %s=> score%d%n",profondeur,prochain,scoreMax);
         return scoreMax;
     }
 

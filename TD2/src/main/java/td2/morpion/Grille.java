@@ -36,7 +36,10 @@ public class Grille {
                 |%s|%s|%s|
                 -------
                 """;
-        List<String> params = Arrays.stream(matrice).flatMap(Arrays::stream).map(j -> j == null ? " " : j.type().toString()).toList();
+        List<String> params = Arrays.stream(matrice)
+                .flatMap(Arrays::stream)
+                .map(j -> j == null ? " " : j.type().toString())
+                .toList();
         return toFormat.formatted(params.toArray());
     }
 
