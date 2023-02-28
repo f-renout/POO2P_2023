@@ -1,5 +1,7 @@
 package fr.unistra.l2.poo2;
 
+import lombok.extern.java.Log;
+
 public class Echequier {
     private final int[] positions = {0, 0, 0, 0, 0, 0, 0, 0};
     private int nbSolutions = 0;
@@ -7,20 +9,34 @@ public class Echequier {
     private Echequier() {
     }
 
+    public static void main(String... args) {
+        Echequier first = new Echequier();
+        first.placerReine(0);
+        first.afficherNbSolutionTotales();
+    }
+
+    private void afficherNbSolutionTotales() {
+        System.out.println("Nb solutions totales : " + nbSolutions);
+    }
+
     private void afficher() {
         //on affiche la position des reines sur chaque ligne
         System.out.print("pos : ");
         for (int k = 0; k < 8; k++) {
-            System.out.print(1+positions[k]);
+            System.out.print(1 + positions[k]);
         }
         System.out.println();
         // Affiche sous forme de plateau d'echec avec des R pour les reines
         // et _ pour des cases vides
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                System.out.print(positions[i] == j ? "R " : "_ ");
-            }
-            System.out.println();
+        for (int colonne = 0; colonne < 8; colonne++) {
+            afficheLigne(colonne);
+        }
+        System.out.println();
+    }
+
+    private void afficheLigne(int niemeReine) {
+        for (int j = 0; j < 8; j++) {
+            System.out.print(positions[niemeReine] == j ? "R " : "_ ");
         }
         System.out.println();
     }
@@ -36,8 +52,9 @@ public class Echequier {
         if (ligne > 0) {
             for (int ligneExistante = 0; ligneExistante < ligne; ligneExistante++) {
                 //un coup est possible si pas de conflit avec les positions des reines déjà placées
-                if (conflit(ligneExistante, positions[ligneExistante], ligne, colonne))
+                if (conflit(ligneExistante, positions[ligneExistante], ligne, colonne)) {
                     return false;
+                }
             }
         }
         return true;
@@ -58,11 +75,5 @@ public class Echequier {
                 }
             }
         }
-    }
-
-    public static void main(String... args) {
-        Echequier first = new Echequier();
-        first.placerReine(0);
-        System.out.println("Nb solutions totales : " + first.nbSolutions);
     }
 }
