@@ -1,4 +1,4 @@
-package fr.unistra.l2.poo2.td4;
+package fr.unistra.l2.poo2.td4.swing;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

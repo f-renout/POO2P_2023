@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-460.5" y="1.0">fr.unistra.l2.poo2.td4.javafx.PointModele</node>
+    <node x="-321.5" y="550.0">fr.unistra.l2.poo2.td4.javafx.PointApplication</node>
+    <node x="-366.5" y="206.5">fr.unistra.l2.poo2.td4.javafx.PointVue</node>
+    <node x="-206.5" y="794.0">fr.unistra.l2.poo2.td4.javafx.Main</node>
+    <node x="-206.5" y="343.0">fr.unistra.l2.poo2.td4.javafx.VueGraphe</node>
+    <node x="-438.0" y="332.0">fr.unistra.l2.poo2.td4.javafx.VueSlider</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.VueSlider" target="fr.unistra.l2.poo2.td4.javafx.PointModele" relationship="DEPENDENCY">
+      <point x="-60.0" y="-49.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.VueGraphe" target="fr.unistra.l2.poo2.td4.javafx.PointModele" relationship="DEPENDENCY">
+      <point x="40.0" y="-38.0" />
+      <point x="-92.0" y="181.0" />
+      <point x="-392.0" y="181.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.VueSlider" target="fr.unistra.l2.poo2.td4.javafx.PointVue" relationship="GENERALIZATION">
+      <point x="60.0" y="-49.0" />
+      <point x="40.0" y="14.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.PointVue" target="fr.unistra.l2.poo2.td4.javafx.PointModele" relationship="TO_ONE">
+      <point x="-40.0" y="-14.5" />
+      <point x="40.0" y="60.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.PointApplication" target="fr.unistra.l2.poo2.td4.javafx.VueGraphe" relationship="TO_ONE">
+      <point x="60.0" y="-71.0" />
+      <point x="-132.0" y="461.0" />
+      <point x="-92.0" y="461.0" />
+      <point x="40.0" y="38.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.PointApplication" target="fr.unistra.l2.poo2.td4.javafx.VueSlider" relationship="TO_ONE">
+      <point x="60.0" y="-71.0" />
+      <point x="-132.0" y="461.0" />
+      <point x="-272.0" y="461.0" />
+      <point x="60.0" y="49.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.VueGraphe" target="fr.unistra.l2.poo2.td4.javafx.PointVue" relationship="GENERALIZATION">
+      <point x="-40.0" y="-38.0" />
+      <point x="-172.0" y="321.0" />
+      <point x="-272.0" y="321.0" />
+      <point x="40.0" y="14.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.PointApplication" target="fr.unistra.l2.poo2.td4.javafx.VueSlider" relationship="CREATE">
+      <point x="-66.33333333333331" y="-71.0" />
+      <point x="-258.3333333333333" y="521.0" />
+      <point x="-392.0" y="521.0" />
+      <point x="-60.0" y="49.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.PointApplication" target="fr.unistra.l2.poo2.td4.javafx.PointApplication" relationship="DEPENDENCY">
+      <point x="-129.5" y="-0.0" />
+      <point x="-492.0" y="621.0" />
+      <point x="-492.0" y="861.0" />
+      <point x="-256.75" y="861.0" />
+      <point x="-64.75" y="71.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.PointApplication" target="fr.unistra.l2.poo2.td4.javafx.VueGraphe" relationship="CREATE">
+      <point x="-66.33333333333331" y="-71.0" />
+      <point x="-258.3333333333333" y="521.0" />
+      <point x="-392.0" y="521.0" />
+      <point x="-392.0" y="481.0" />
+      <point x="-168.33333333333331" y="481.0" />
+      <point x="-36.333333333333314" y="38.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.PointApplication" target="fr.unistra.l2.poo2.td4.javafx.PointModele" relationship="CREATE">
+      <point x="-66.33333333333331" y="-71.0" />
+      <point x="-258.3333333333333" y="521.0" />
+      <point x="-392.0" y="521.0" />
+      <point x="-392.0" y="481.0" />
+      <point x="-472.0" y="481.0" />
+      <point x="-472.0" y="201.0" />
+      <point x="-437.66666666666663" y="201.0" />
+      <point x="-45.66666666666666" y="60.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.javafx.Main" target="fr.unistra.l2.poo2.td4.javafx.PointApplication" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.0" />
+      <point x="60.0" y="71.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.9079545454545455" showDependencies="true" x="-264.5" y="441.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

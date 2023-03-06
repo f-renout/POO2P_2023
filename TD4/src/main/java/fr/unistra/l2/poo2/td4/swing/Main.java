@@ -1,4 +1,4 @@
-package fr.unistra.l2.poo2.td4;
+package fr.unistra.l2.poo2.td4.swing;
 
 public class Main {
     public static void main(String[] args)

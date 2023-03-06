@@ -1,4 +1,4 @@
-package fr.unistra.l2.poo2.td4;
+package fr.unistra.l2.poo2.td4.swing;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
