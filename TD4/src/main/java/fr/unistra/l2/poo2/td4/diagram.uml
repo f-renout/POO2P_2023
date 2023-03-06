@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-1276.5" y="255.0">fr.unistra.l2.poo2.td4.PointModele</node>
+    <node x="-224.5" y="108.0">fr.unistra.l2.poo2.td4.ChangementPositionEvent</node>
+    <node x="-1246.5" y="628.0">fr.unistra.l2.poo2.td4.Main</node>
+    <node x="-836.5" y="266.0">fr.unistra.l2.poo2.td4.VueSlider</node>
+    <node x="-1269.5" y="108.0">fr.unistra.l2.poo2.td4.ChangementPositionListener</node>
+    <node x="-851.0" y="457.0">fr.unistra.l2.poo2.td4.PointControleur</node>
+    <node x="-396.5" y="277.0">fr.unistra.l2.poo2.td4.VueGraphe</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="fr.unistra.l2.poo2.td4.VueGraphe" target="fr.unistra.l2.poo2.td4.ChangementPositionListener" relationship="REALIZATION">
+      <point x="-50.0" y="-38.0" />
+      <point x="-242.0" y="135.0" />
+      <point x="157.5" y="0.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.Main" target="fr.unistra.l2.poo2.td4.PointModele" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="-100.0" y="60.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.VueSlider" target="fr.unistra.l2.poo2.td4.ChangementPositionListener" relationship="REALIZATION">
+      <point x="-100.0" y="-49.0" />
+      <point x="-732.0" y="235.0" />
+      <point x="-1112.0" y="235.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.VueSlider" target="fr.unistra.l2.poo2.td4.ChangementPositionEvent" relationship="CREATE">
+      <point x="100.0" y="-49.0" />
+      <point x="-532.0" y="215.0" />
+      <point x="-112.0" y="215.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.Main" target="fr.unistra.l2.poo2.td4.PointControleur" relationship="CREATE">
+      <point x="0.0" y="-27.0" />
+      <point x="-1172.0" y="595.0" />
+      <point x="-732.0" y="595.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.PointControleur" target="fr.unistra.l2.poo2.td4.PointModele" relationship="DEPENDENCY">
+      <point x="-80.0" y="-38.0" />
+      <point x="-812.0" y="435.0" />
+      <point x="-972.0" y="435.0" />
+      <point x="100.0" y="60.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.PointControleur" target="fr.unistra.l2.poo2.td4.VueSlider" relationship="TO_ONE">
+      <point x="0.0" y="-38.0" />
+      <point x="-100.0" y="49.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.PointControleur" target="fr.unistra.l2.poo2.td4.VueGraphe" relationship="CREATE">
+      <point x="80.0" y="-38.0" />
+      <point x="-652.0" y="435.0" />
+      <point x="-92.0" y="435.0" />
+      <point x="100.0" y="38.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.PointControleur" target="fr.unistra.l2.poo2.td4.VueSlider" relationship="CREATE">
+      <point x="80.0" y="-38.0" />
+      <point x="-20.0" y="49.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.PointModele" target="fr.unistra.l2.poo2.td4.ChangementPositionEvent" relationship="CREATE">
+      <point x="100.0" y="-60.0" />
+      <point x="-972.0" y="215.0" />
+      <point x="-112.0" y="215.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.PointModele" target="fr.unistra.l2.poo2.td4.ChangementPositionListener" relationship="REALIZATION">
+      <point x="-40.0" y="-60.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.PointControleur" target="fr.unistra.l2.poo2.td4.VueGraphe" relationship="TO_ONE">
+      <point x="0.0" y="-38.0" />
+      <point x="-732.0" y="415.0" />
+      <point x="-295.0" y="415.0" />
+      <point x="-103.0" y="38.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.VueGraphe" target="fr.unistra.l2.poo2.td4.ChangementPositionEvent" relationship="CREATE">
+      <point x="80.0" y="-38.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.1793893129770991" showDependencies="true" x="-621.9999999999999" y="405.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>protected</VISIBILITY>
+</Diagram>
+
