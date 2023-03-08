@@ -17,6 +17,7 @@
         <module>TD1</module>
         <module>TD2</module>
         <module>TD3</module>
+        <module>TD4</module>
     </modules>
 
     <build>

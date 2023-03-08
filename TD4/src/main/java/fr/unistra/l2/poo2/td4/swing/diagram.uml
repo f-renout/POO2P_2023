@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-124.0" y="-43.5">fr.unistra.l2.poo2.td4.swing.Point</node>
+    <node x="283.5" y="144.5">fr.unistra.l2.poo2.td4.swing.ChangementPositionListener</node>
+    <node x="-210.5" y="312.5">fr.unistra.l2.poo2.td4.swing.PointModele</node>
+    <node x="-61.0" y="748.5">fr.unistra.l2.poo2.td4.swing.Main</node>
+    <node x="307.5" y="556.5">fr.unistra.l2.poo2.td4.swing.PointControleur</node>
+    <node x="-73.0" y="144.5">fr.unistra.l2.poo2.td4.swing.ChangementPositionEvent</node>
+    <node x="296.16666666666663" y="336.5">fr.unistra.l2.poo2.td4.swing.VueGraphe</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="fr.unistra.l2.poo2.td4.swing.VueGraphe" target="fr.unistra.l2.poo2.td4.swing.ChangementPositionEvent" relationship="CREATE">
+      <point x="-15.0" y="-43.5" />
+      <point x="513.6666666666666" y="245.0" />
+      <point x="77.0" y="245.0" />
+      <point x="15.0" y="35.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.PointControleur" target="fr.unistra.l2.poo2.td4.swing.VueGraphe" relationship="TO_ONE">
+      <point x="86.66666666666663" y="-43.5" />
+      <point x="-0.0" y="43.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.Main" target="fr.unistra.l2.poo2.td4.swing.PointModele" relationship="CREATE">
+      <point x="0.0" y="-31.5" />
+      <point x="0.0" y="67.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.PointModele" target="fr.unistra.l2.poo2.td4.swing.ChangementPositionListener" relationship="REALIZATION">
+      <point x="160.0" y="-67.5" />
+      <point x="182.0" y="280.0" />
+      <point x="462.0" y="280.0" />
+      <point x="0.0" y="35.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.PointModele" target="fr.unistra.l2.poo2.td4.swing.ChangementPositionEvent" relationship="CREATE">
+      <point x="-160.0" y="-67.5" />
+      <point x="-138.0" y="260.0" />
+      <point x="62.0" y="260.0" />
+      <point x="0.0" y="35.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.PointModele" target="fr.unistra.l2.poo2.td4.swing.Point" relationship="CREATE">
+      <point x="-160.0" y="-67.5" />
+      <point x="-138.0" y="160.0" />
+      <point x="-98.0" y="160.0" />
+      <point x="-20.0" y="43.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.VueGraphe" target="fr.unistra.l2.poo2.td4.swing.Point" relationship="TO_ONE">
+      <point x="129.33333333333337" y="-43.5" />
+      <point x="658.0" y="0.0" />
+      <point x="46.0" y="-0.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.PointControleur" target="fr.unistra.l2.poo2.td4.swing.VueGraphe" relationship="CREATE">
+      <point x="-0.0" y="-43.5" />
+      <point x="-86.66666666666663" y="43.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.Main" target="fr.unistra.l2.poo2.td4.swing.PointControleur" relationship="CREATE">
+      <point x="0.0" y="-31.5" />
+      <point x="22.0" y="720.0" />
+      <point x="442.0" y="720.0" />
+      <point x="0.0" y="43.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.PointModele" target="fr.unistra.l2.poo2.td4.swing.Point" relationship="TO_ONE">
+      <point x="80.0" y="-67.5" />
+      <point x="102.0" y="260.0" />
+      <point x="222.0" y="260.0" />
+      <point x="222.0" y="80.0" />
+      <point x="-54.0" y="80.0" />
+      <point x="24.0" y="43.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.VueGraphe" target="fr.unistra.l2.poo2.td4.swing.Point" relationship="CREATE">
+      <point x="144.33333333333337" y="-43.5" />
+      <point x="673.0" y="-15.0" />
+      <point x="46.0" y="-15.0" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.ChangementPositionEvent" target="fr.unistra.l2.poo2.td4.swing.Point" relationship="TO_ONE">
+      <point x="0.0" y="-35.5" />
+      <point x="62.0" y="120.0" />
+      <point x="222.0" y="120.0" />
+      <point x="222.0" y="80.0" />
+      <point x="-54.0" y="80.0" />
+      <point x="24.0" y="43.5" />
+    </edge>
+    <edge source="fr.unistra.l2.poo2.td4.swing.VueGraphe" target="fr.unistra.l2.poo2.td4.swing.ChangementPositionListener" relationship="REALIZATION">
+      <point x="-0.0" y="-43.5" />
+      <point x="66.66666666666663" y="35.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5627853881278538" showDependencies="true" x="528.6666666666666" y="380.0" />
+  <SelectedNodes>
+    <node>fr.unistra.l2.poo2.td4.swing.VueGraphe</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>protected</VISIBILITY>
+</Diagram>
+
