@@ -1,0 +1,42 @@
+@startuml
+
+skin rose
+
+title Bibliotheque Diagramme de classe
+
+
+class Bibliotheque{
+- List<Client> inscrits
+ -List<Items> collection
+}
+class Client{
+ -String nom
+ -int amende
+ -List<Empruntable> ouvragesEmpruntes
+ +void emprunte(Empruntable item)
+ +void consulte(Consultable consulte)
+ +void rend(Item item)
+}
+enum Etat
+interface Empruntable {
+ empruntePar(Client client)
+}
+abstract class Item implements Empruntable{
+ -Etat etat
+}
+interface Consultable{
+ void consulte(Client client, Date dateConsultation)
+ boolean estConsultable()
+}
+class CD extends Item implements Consultable
+class Roman extends Item implements Consultable
+class BD extends Item implements Consultable
+class Blueray extends Item
+
+Bibliotheque "1" o-- "*" Client: inscrits
+Bibliotheque "1" o-- "*" Item: collection
+Item *-- Etat
+Client *-- Item: ouvragesEmpruntes
+Consultable -up- Client
+
+@enduml

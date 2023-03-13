@@ -1,0 +1,93 @@
+# Java général
+- Qu'est ce qu'un package, à quoi sert-il ?
+  - c'est un regroupement de classes
+  - permet de structurer le code et de le regrouper logiquement
+  - theoriquement il devrait commencer par un identifiant de l'organisation qui possede le code
+    - par exemple org.apache.xxx pour les classes mises à dispo par la fondation apache
+- Quels ont les niveaux de visiblité et leurs portées respectives?
+  - [ ] public visible de tous
+  - [ ] private visible de personne
+  - [ ] package protected visible de toutes les classes du même package
+  - [ ] protected visible de toutes les classes filles
+- Quelle est la convention de nommage
+  - d'une classe
+    - Camelcase avec une majuscule
+  - d'une methode
+    - Camelcase avec une minuscule
+  - d'une constante
+    - snakecase en majuscule
+  - d'une variable
+    - comme une méthode
+- Qu'est ce qu'une classe générique ?
+  - ce sont des classes qui seront typées au moment de leur instanciation (ou spécialisation)
+  - ca permet d'éviter de caster des objets
+  - un exemple de classes génériques : l'ensemble des collections en java (Array, List, Queue, ...)
+- Comment reconnait-on une variable/méthode de classe?
+  - grace au mot clé static
+- A quoi sert le mot clé final ?
+  - à indiqué que la variable est immutable (on ne peut plus la réaffecter)
+
+# Interface et Classe abstraite
+
+ - Peut-on instancier 
+   - une interface ? 
+     - NON
+   - une classe abstraite ?
+     - NON
+ - Peut-on y mettre 
+   - un constructeur ? 
+     - oui pour la classe abstraite
+   - Un constructeur avec un corps ?
+     - idem 
+ - Peut-on écrire le code suivant : A a = new B() ;
+    - Si A est une classe abstraite, dérivée par la classe B ?
+    - Si A est une interface, implémentée par une classe B ?
+      - Oui (sauf si B est une classe abstraite)
+ - Une interface/classe abstraite peut-elle contenir 
+   - des méthodes abstraites ? 
+     - oui
+   - Non-abstraites ? 
+     - oui (default implementation pour l'interface) 
+     - Attention avant java 8 impossible dans les interfaces
+   - Statiques et abstraites ?
+     - non ca n'existe pas (statique ne s'herite pas)
+ - Une interface/classe abstraite peut-elle contenir des attributs ? 
+   - Avec quels modificateurs ?
+     - uniquement des constantes publiques pour les interfaces
+     - oui pour les classes abstraites
+   - Doivent-il être instanciés ?
+     - oui pour les interfaces
+ - Une interface peut-elle hériter 
+   - d'une autre interface ?
+     - oui
+   - D'une classe abstraite ?
+     - non
+ - Une classe abstraite peut-elle hériter 
+   - d'une autre classe abstraite ? 
+     - oui
+   - D'une interface ?
+     - non (on implémente une interface)
+
+
+# UML Diagramme de classe
+
+- quelle est la difference entre aggregation et composition ?
+  - Aggregation : losange vide avec trait plein
+    - les objets agregés ont une vie propre (ex : un livre a du sens sans une bibliotheque)
+  - composition : losange plein avec trait plein
+    - les objets de la composition n'a pas de sens sans l'objet 'origine' (ex : le prenom d'une personne n'a pas de sens sans l'association à la personne)
+- comment modélise-t-on une implementation ?
+  - fleche pleine avec trait en pointille
+- comment modélise-t-on un héritage ?
+    - fleche pleine avec trait plein
+- comment modélise-t-on les niveau de visibilité
+  - '+' = public
+  - '-' = private
+  - '#' = protected
+  - '' = package protected
+- comment modélise-t-on une classe, classe abstraite, interface ?
+  - un rectangle avec
+    - en haut le nom de la classe
+    - un 1er sous rectangle avec les proprietes
+    - un 2eme sous rectangle avec les méthodes
+    - pour les methodes/propriétés statiques : il faut les souligner
